@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+C:\repos\max\java\console apps\dicerollJava\.metadata\.plugins\org.eclipse.jdt.core
+2984748232.index
+3661727006.index
+1865797976.index

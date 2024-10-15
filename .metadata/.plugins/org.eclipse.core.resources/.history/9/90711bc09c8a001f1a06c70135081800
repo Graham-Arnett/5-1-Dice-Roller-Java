@@ -1,0 +1,46 @@
+package dice;
+import java.util.Scanner;
+import java.util.Random;
+
+public class Diceroll {
+
+	public static void main(String[] args) {
+		//dice rolling app
+		System.out.println("Hello, welcome to the dice roller app!");
+		Scanner scanner = new Scanner(System.in);
+		Random random = new Random();
+		
+		System.out.print("Roll the dice? (y/n): ");
+		//string input 
+		String choice = scanner.next();
+		
+		//start while loop
+		while(choice.equalsIgnoreCase("y")) 
+		{ 
+		//for loop
+			int total = 0;
+			int totalrolls = 2;
+			for(int i = 0; i < totalrolls; i++) 
+			{
+			int roll = random.nextInt(1,7);	
+			System.out.println("Roll" i+1 + roll);
+			total += roll;
+			}
+			if(total == 2) 
+			{
+				System.out.println("Snake eyes!");
+			}
+			else if(total == 12) 
+			{
+				System.out.println("Boxcars!");
+			}
+			else 
+			{
+				System.out.println("Total: " + total);
+			}
+			System.out.println();
+		}
+		System.out.print("Bye-bye!");
+	}
+
+}
